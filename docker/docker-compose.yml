@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  roscore:
+    image: ros:melodic-ros-base
+    container_name: roscore
+    command: roscore
+
+  talker:
+    build: .
+    container_name: talker
+    environment:
+      - "ROS_HOSTNAME=talker"
+      - "ROS_MASTER_URI=http://roscore:11311"
+    command: rosrun talker talker_node
