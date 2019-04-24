@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "172.28.128.3",
+  "port": "22",
+  "target": "/home/vagrant/talker",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "vagrant",
+  "password": "vagrant",
+  "watch": [],
+  "transport": "scp"
+}
