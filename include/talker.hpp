@@ -8,10 +8,10 @@ class Talker {
 public:
   // Constructor
   Talker();
-  
+
 private:
   // Node handler
-  ros::NodeHandle nh;
+  ros::NodeHandle n;
 
   // ROS publisher
   ros::Timer publishTimer;
