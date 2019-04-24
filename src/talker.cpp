@@ -1,9 +1,6 @@
 #include "talker.hpp"
 
 Talker::Talker() {
-  // Create node handler
-  this->n(~);
-
   // Create message to send
   this->msg = "Hello Docker-ROS container!";
 
