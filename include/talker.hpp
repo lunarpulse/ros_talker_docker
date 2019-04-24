@@ -5,6 +5,10 @@
 #include "std_msgs/String.h"
 
 class Talker {
+public:
+  // Constructor
+  Talker();
+  
 private:
   // Node handler
   ros::NodeHandle nh;
@@ -15,9 +19,6 @@ private:
   ros::Publisher messagePublisher;
   // Message to send
   std_msgs::String msg;
-
-  // Constructor
-  Talker();
 
   // Publish timer callback
   void publishTimerCallback(const ros::TimerEvent& event);
