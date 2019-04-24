@@ -21,6 +21,6 @@ private:
 
   // Publish timer callback
   void publishTimerCallback(const ros::TimerEvent& event);
-}
+};
 
 #endif TALKER_HPP
