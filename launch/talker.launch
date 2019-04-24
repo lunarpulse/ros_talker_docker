@@ -1,3 +1,3 @@
 <launch>
-  <node pkg="talker" type="talker" name="talker_node"/>
+  <node pkg="talker" name="talker" type="talker_node"/>
 </launch>

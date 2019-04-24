@@ -12,4 +12,4 @@ RUN git clone https://github.com/mmmherma/talker.git
 WORKDIR /catkin_ws/
 RUN /bin/bash -c '. /opt/ros/$ROS_DISTRO/setup.bash; cd /catkin_ws/; catkin_make -DCATKIN_WHITELIST_PACKAGES=talker'
 
-CMD ["rosrun", "talker", "talker_node"]
+CMD ["roslaunch", "talker talker.launch"]
