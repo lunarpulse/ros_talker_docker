@@ -11,5 +11,6 @@ Talker::Talker() {
 }
 
 void Talker::publishTimerCallback(const ros::TimerEvent& event) {
+  ROS_INFO("Publishing message");
   this->messagePublisher.publish(msg);
 }

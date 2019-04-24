@@ -8,7 +8,7 @@ int main(int argc, char **argv) {
   Talker * talker = new Talker();
 
   // Wait for ROS shutdown
-  ros::waitForShutdown();
+  ros::spin();
 
   return 0;
 }
