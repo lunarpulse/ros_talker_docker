@@ -16,8 +16,3 @@ RUN /bin/bash -c '. devel/setup.bash'
 COPY ros_entrypoint.sh /
 RUN chmod +x /ros_entrypoint.sh
 CMD ["rosrun", "talker", "talker_node"]
-
-
-# docker run -d --restart always --name talker --net rosnetwork --env ROS_MASTER_URI=http://roscore:11311 --env ROS_HOSTNAME=talker ros:talker
-# docker run -d --restart always --name roscore --net rosnetwork ros:melodic-ros-base roscore
-# docker-compose up --build -d
