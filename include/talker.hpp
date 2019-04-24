@@ -14,7 +14,7 @@ private:
   // ROS timer
   ros::Publisher messagePublisher;
   // Message to send
-  std::msgs msg;
+  std_msgs::String msg;
 
   // Constructor
   Talker();
