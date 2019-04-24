@@ -5,7 +5,7 @@ Talker::Talker() {
   this->msg.data = "Hello Docker-ROS container!";
 
   // Create ROS publisher timer
-  this->publishTimer = n.createTimer(ros::Duration(1), publishTimerCallback);
+  this->publishTimer = n.createTimer(ros::Duration(1), &Talker::publishTimerCallback, this);
   // Create ROS publisher
   this->messagePublisher = n.advertise<std_msgs::String>("message", 1);
 }
