@@ -1,4 +1,4 @@
 <launch>
   <node pkg="talker" name="talker" required="true" type="talker_node"/>
-  <node name="recorder" pkg="rosbag" type="record" required="true" args="record -o /catkin_ws/talker.bag -a" output="screen" />
+  <node name="recorder" pkg="rosbag" type="record" required="true" args="-a -o /catkin_ws/talker.bag " output="screen" />
 </launch>
