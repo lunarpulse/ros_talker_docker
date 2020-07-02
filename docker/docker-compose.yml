@@ -1,19 +1,11 @@
 version: '3.5'
 
 services:
-  roscore:
-    image: ros:melodic-ros-base
-    container_name: roscore
-    command: roscore
-    networks:
-      - rosnetwork
-
   talker:
     build: .
     container_name: talker
     environment:
       - "ROS_HOSTNAME=talker"
-      - "ROS_MASTER_URI=http://roscore:11311"
     command: roslaunch talker talker.launch
     networks:
       - rosnetwork
