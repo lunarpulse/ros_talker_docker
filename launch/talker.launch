@@ -1,3 +1,4 @@
 <launch>
-  <node pkg="talker" name="talker" type="talker_node"/>
+  <node pkg="talker" name="talker" required="true" type="talker_node"/>
+  <node name="recorder" pkg="rosbag" type="record" required="true" args="record -o talker.bag -a"/>
 </launch>

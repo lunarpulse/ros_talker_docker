@@ -14,7 +14,7 @@ services:
     environment:
       - "ROS_HOSTNAME=talker"
       - "ROS_MASTER_URI=http://roscore:11311"
-    command: rosrun talker talker_node
+    command: roslaunch talker talker.launch
     networks:
       - rosnetwork
 
